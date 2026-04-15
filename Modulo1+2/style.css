@@ -3,6 +3,7 @@ a {
   color: red;
   text-decoration: wavy;
   font-size: 32px;
+  font-weight: bold;
 }
 
 h1 {
@@ -38,11 +39,35 @@ p a {
   font-size: 50px;
 }
 
-div {
+.blocoRedBlack {
   background: rgb(124, 25, 25);
   width: 150px;
   height: 70px;
-  padding: 150px;
-  border: 5px solid black;
-  margin: 50px;
+  padding: 20px;
+  border: 10px solid black;
+  margin: 5px;
+  transition: background 0.3s;
+}
+
+.blocoRedBlack:hover {
+  background: green;
+  color: white;
+}
+
+.marcarBorders {
+  border: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+.respeitaInlineBlock {
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  background: lightblue;
+}
+
+.forcarImg {
+  width: 400px;
 }
