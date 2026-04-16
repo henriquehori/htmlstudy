@@ -1,41 +1,68 @@
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-div {
-  display: inline-size;
-  background: #d17373;
-  padding: 10px 20px 30px 40px;
-  border: 40px solid rgb(118, 219, 118);
-  border-top: 20px solid rgba(0, 0, 255, 1);
-  border-bottom: 50px solid orange;
-}
-
-h1 {
-  text-align: center;
-}
-
-h2 {
-  margin: 0px;
-}
-
-.comprar {
-  background: rgb(211, 164, 211);
-  color: #103;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 4px;
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .item {
-  background-color: rgb(212, 209, 209);
+  background: #f7f7f7;
   border: 1px solid #e7e7e7;
   padding: 20px;
   border-radius: 4px;
+  display: grid;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 10px;
+body {
+  font-family: Arial;
+  background-color: rgb(184, 176, 205);
+}
+
+h1,
+p {
+  text-align: center;
+  margin: 0px;
+  display: block;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: auto;
+  margin-top: 10px;
+}
+
+h2 {
+  margin-top: 0px;
+}
+
+.comprar {
+  background: #a8f;
+  color: #103;
+  padding: 10px 10px;
+  text-decoration: none;
+  text-align: center;
+
+  border-radius: 4px;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.imagemBike {
+  grid-column: 1/-1;
+  max-width: 100%;
+}
+
+.preco {
+  display: inline-block;
+  background-color: #ddd;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.titulo {
+  text-align: left;
+}
+
+.descricao {
+  grid-column: 1 / span 2;
+  text-align: justify;
 }
